@@ -32,14 +32,6 @@
               >
                 <img src="assets/images/twitter icon.png" />Tweet
               </button>
-              <button
-              onclick="sendStatusforMobile()"
-                id="mobile-btn"
-                type="button"
-                class="btn btn-outline-primary"
-              >
-                <img src="assets/images/whatsapp icon.png" /> Send to status
-              </button>
             </div>
           </div>
         </div>
@@ -59,10 +51,6 @@
       }
 
       getQuote(api_url);
-
-      function sendStatusforMobile() {
-        window.open("https://twitter.com/intent/tweet?text=" +quote.innerHTML + "--By " +author.innerHTML,"Share Window","width=700 ,height=500");
-      }
       function sendStatusforDesktop() {
         window.open("https://twitter.com/intent/tweet?text=" +quote.innerHTML + "--By " +author.innerHTML,"Share Window","width=500 ,height=300");
       }
